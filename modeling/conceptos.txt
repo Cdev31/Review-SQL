@@ -1,0 +1,14 @@
+-Diferencia entre un RDMS y DBMS.
+-Comandos DDL y MDL.
+-Partes de un sistema sql: -Bases de datos.
+                           -Tablas.
+                           -Consultas.
+                           -Restricciones.
+                           -Procedimientos almacenados.
+                           -Transacciones.
+
+-Funcionamiento interno sql: -Entrada
+                             -Analisis
+                             -Optimizacion
+                             -Ejecucion.
+                             -Salida.
