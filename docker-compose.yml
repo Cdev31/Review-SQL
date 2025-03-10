@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password  # Contraseña para el usuario root
+      MYSQL_DATABASE: example_db         # Base de datos por defecto
+      MYSQL_USER: user                   # Usuario adicional
+      MYSQL_PASSWORD: user_password      # Contraseña para el usuario adicional
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_container
+    environment:
+      PMA_HOST: mysql                  # Apunta a la base de datos MySQL
+      PMA_USER: user                    # Usuario de MySQL
+      PMA_PASSWORD: user_password       # Contraseña de MySQL
+    ports:
+      - "8080:80"                       # Exponer phpMyAdmin en el puerto 8080
+    depends_on:
+      - mysql
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver_container
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd"  
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgres_password
+      POSTGRES_DB: example_db
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin_password     
+    ports:
+      - "8081:80"  
+    depends_on:
+      - postgres
+
