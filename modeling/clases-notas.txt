@@ -1,0 +1,84 @@
+-----------------------------MODELADO DE BASES DE DATOS----------------------------------
+
+Un modelo de datos es un marco estructurado que define como se almacen, organizan
+y acceden los datos en una base de datos.
+
+-Tipos mas importantes:
+
+Modelo conceptual: Proporciona una vista de alto nivel centrada en los negocios
+del panorama de datos.
+
+Modelo logico: Detalla los elementos y relaciones de los datos en un marco especifico
+del proyecto.
+
+Modelo fisico: Se ocupa de las implementaciones especificas y las estrategias de 
+almacenamiento de datos.
+
+---------------------------------MODELO ENTIDAD-RELACION-------------------------------
+
+Propuesto por Peter Chen en 1976 este modelo pretende representar los problemas del 
+mundo real de forma grafica utilizando entidades relacionadas entre si para representar
+el contexto real.
+
+Caracteristicas del MER
+
+Presentacion Grafica: Usa diagramas para visualizar la estructura de los datos
+
+Enfoque Conceptual: Se centra en la logica del negocio antes de la implementacion.
+
+Estandarizacio: Proporciona reglas claras para evitar redundancia e inconsistencias.
+
+Facilita el Diseño: Permite identificar entidades, atributos y relaciones antes de 
+crear la base de datos.
+
+
+-Componentes graficos del MER.
+
+.Entidades fuertes: Contienen existencia independiente y poseen una clave primaria y 
+se representan con un rectangulo.
+
+.Entidades debiles: Dependen de otra entidad para existir y no tienen una clave primaria 
+propia.
+
+.Relaciones: se representan con un rombo y representan las relaciones entre entidades
+
+.Relaciones debiles: esta ocurre cuando una entidad en la relacion almenos es debil.
+
+.Atributos normales: Caracteristicas de la entidad.
+
+.Atirbuto clave primaria: Identifica de manera unica cada entidad.
+.Atibuto multivaluados: Pueden tener mas de un valor, se representan con un ovalo doble
+
+.Atributo derivado: se puede descomponer en atributos mas pequeños
+
+
+-----------------------------------TIPOS DE RELACIONES--------------------------------
+
+-Relacion n-aria(ternaria, cuaternaria,...): Esta esta definida por tener 1 o mas 
+relaciones entre entidades.
+
+-Relacion recursiva: Es una relacion la cual se contiene asi misma con respecto a su 
+entidad.
+
+------------------------------------CARDINALIDAD-----------------------------------------
+
+La cardinalidad muestra de que forma una relacione esta cuantificada y desde que entidad.
+
+-Tipos:
+
+Uno a uno (1:1): Relación en la que cada entidad de un conjunto se asocia únicamente con una 
+entidad del otro conjunto y viceversa. Es decir, a cada elemento de la primera entidad le 
+corresponde exactamente un elemento de la segunda, y a cada elemento de la segunda le corresponde
+exactamente uno de la primera.
+
+Uno a muchos (1:M): Relación en la que un único elemento de una entidad puede estar asociado con 
+múltiples elementos de otra entidad, pero cada uno de estos elementos solo puede estar relacionado 
+con un único elemento de la primera entidad.
+
+Muchos a muchos (M:M): Relación en la que varios elementos de una entidad pueden estar asociados con 
+varios elementos de otra entidad. Es decir, un elemento de la primera entidad puede estar vinculado a 
+múltiples elementos de la segunda, y viceversa.
+
+Nota: Las relaciones no son definidas, son conceptualizadas dado que estas son mas naturales del 
+sistema.
+

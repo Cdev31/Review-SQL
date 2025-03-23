@@ -1,0 +1,14 @@
+Un sistema gestor de bases de datos (SGBD) consiste en una coleccion de datos 
+interrelacionados y un conjunto de programas para acceder a dichos datos.
+
+1.1-Aplicaciones de los sistemas de bases de datos.
+
+Las bases de datos, la informacion ha venido creciendo los ultimos años con respecto 
+a su uso, dado que las empresas hacen uso de ellas para mantener una mejor organizacion 
+de sus datos. La evolucion de las mismas a proporcionado formas diversad de interactuar 
+con ellas sin necesidad de interactuar directamente, por ejemplo: el ver los movimientos 
+bancarios de una persona, reservar vuelos, etc. Esto nos brinda un mejor panorama de la 
+importancia y evolucion de las bases de datos.
+
+1.2-Propositos de los sistemas de bases de datos.
+
